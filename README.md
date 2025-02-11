@@ -15,7 +15,7 @@
 <body>
     <div class="container" id="content">
         <h2 id="title">Halaman 1: Informasi Pribadi</h2>
-        <img id="image" src="profile.jpg" alt="Foto Profil">
+        <img id="image" src="Picture 1.jpeg" alt="Foto Profil">
         <p id="info1"><strong>Nama:</strong> Asma Lutfi</p>
         <p id="info2"><strong>Tempat & tanggal lahir:</strong> Siwalempu, 07 Mei 2005</p>
         <p id="info3"><strong>Alamat:</strong> Jl. Lengaru, Palu Timur</p>
@@ -43,7 +43,7 @@
             page = 2;
         } else {
             document.getElementById('title').innerText = "Halaman 1: Informasi Pribadi";
-            document.getElementById('image').src = "profile.jpg";
+            document.getElementById('image').src = "Picture 1.jpeg";
             document.getElementById('image').alt = "Foto Profil";
             document.getElementById('info1').innerHTML = "<strong>Nama:</strong> Asma Lutfi";
             document.getElementById('info2').innerHTML = "<strong>Tempat & tanggal lahir:</strong> Siwalempu, 07 Mei 2005";
