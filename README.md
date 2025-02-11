@@ -26,3 +26,31 @@
     </div>
 </body>
 </html>
+
+<html>
+<head>
+    <head>
+        <style>
+            body { font-family: Arial, sans-serif; text-align: center; background-color: #e3148d; color: rgb(235, 120, 183); }
+            .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #de7aaf; border-radius: 10px; background-color: rgba(255, 255, 255, 0.9); color: black; }
+            .hidden { display: none; }
+            button { margin-top: 10px; padding: 10px; cursor: pointer; }
+            img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 15px; }
+        </style>
+    </head>
+<body>
+    <div class="container hidden" id="page2">
+    <h2>Halaman 2: Pendidikan & Keterampilan</h2>
+    <img src="Universitas Tadulako.jpg" alt="Pendidikan">
+    <p><strong>Pendidikan:</strong> S1 Sistem Informasi, Universitas Tadulako</p>
+    <button onclick="showPage(1)">Kembali ke Halaman 1</button>
+    </div>
+    <script>
+    function showPage(page) {
+        document.getElementById('page1').classList.add('hidden');
+        document.getElementById('page2').classList.add('hidden');
+        document.getElementById('page' + page).classList.remove('hidden');
+    }
+    </script>
+</body>
+</html>
