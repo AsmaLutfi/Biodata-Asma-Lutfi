@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #ce1380; color: white; }
-        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: rgba(255, 255, 255, 0.9); color: black; }
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #ce1380; color: rgb(235, 120, 183); }
+        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eaeaea; border-radius: 10px; background-color: rgba(255, 255, 255, 0.9); color: black; }
         .hidden { display: none; }
         button { margin-top: 10px; padding: 10px; cursor: pointer; }
         img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 15px; }
@@ -17,9 +17,12 @@
         <h2>Halaman 1: Informasi Pribadi</h2>
         <img src="Picture 1.jpeg" widht="300" height="200" alt="Foto Profil">
         <p><strong>Nama:</strong> Asma Lutfi</p>
-        <p><strong>Alamat:</strong> Jl. Lengaru, Palu</p>
-        <p><strong>Email:</strong> asmalutfi025@gmail.com</p>
-        <p><strong>No. HP:</strong> 082187937743</p>
+        <p><strong>Tempat & tanggal tahir:</strong> Siwalempu, 07 Mei 2005</p>
+        <p><strong>Alamat:</strong> Jl. Lengaru, Palu Timur</p>
+        <p><strong>Hobi:</strong> Gaming and Reading</p>
+        <p><strong>Makanan Favorit:</strong> Es Krim</p>
+        <p><strong>Minuman Favorit:</strong> Susu Strawberry</p>
+        <p><strong>Musik Favorit:</strong> Blessing Cover by TNF</p>
         <button onclick="showPage(2)">Lanjut ke Halaman 2</button>
     </div>
 </body>
