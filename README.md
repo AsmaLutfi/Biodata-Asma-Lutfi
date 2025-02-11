@@ -1,42 +1,52 @@
 <html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title style="color:#bcbcbc;">Biodata</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #e3148d; color: rgb(235, 120, 183); }
-        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #de7aaf; border-radius: 10px; background-color: rgba(255, 255, 255, 0.9); color: black; }
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #1E90FF; color: white; }
+        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: rgba(255, 255, 255, 0.9); color: black; }
         .hidden { display: none; }
         button { margin-top: 10px; padding: 10px; cursor: pointer; }
         img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 15px; }
     </style>
 </head>
 <body>
-    <div class="container" id="page1">
-        <h2>Halaman 1: Informasi Pribadi</h2>
-        <img src="Picture 1.jpeg" widht="300" height="200" alt="Foto Profil">
-        <p><strong>Nama:</strong> Asma Lutfi</p>
-        <p><strong>Tempat & tanggal tahir:</strong> Siwalempu, 07 Mei 2005</p>
-        <p><strong>Alamat:</strong> Jl. Lengaru, Palu Timur</p>
-        <p><strong>Hobi:</strong> Gaming and Reading</p>
-        <p><strong>Makanan Favorit:</strong> Es Krim</p>
-        <p><strong>Minuman Favorit:</strong> Susu Strawberry</p>
-        <p><strong>Musik Favorit:</strong> Blessing Cover by TNF</p>
-        <button onclick="showPage(2)">Lanjut ke Halaman 2</button>
-    </div>
-    <div class="container hidden" id="page2">
-    <h2>Halaman 2: Pendidikan & Keterampilan</h2>
-    <img src="Universitas Tadulako.jpg" alt="Pendidikan">
-    <p><strong>Universitas:</strong> Tadulako</p>
-    <p><strong>Fakultas:</strong> Teknik</p>
-    <p><strong>Prodi:</strong> S1 Sistem Informasi</p>
-    <button onclick="showPage(1)">Kembali ke Halaman 1</button>
+    <div class="container" id="content">
+        <h2 id="title">Halaman 1: Informasi Pribadi</h2>
+        <img id="image" src="profile.jpg" alt="Foto Profil">
+        <p id="info1"><strong>Nama:</strong> Asma Lutfi</p>
+        <p id="info2"><strong>Alamat:</strong> Jl. Lengaru, Palu</p>
+        <p id="info3"><strong>Email:</strong> asmalutfi025@gmail.com</p>
+        <p id="info4"><strong>No. HP:</strong> 082187937743</p>
+        <button onclick="togglePage()" id="toggleButton">Lanjut ke Halaman 2</button>
     </div>
     <script>
-    function showPage(page) {
-        document.getElementById('page1').classList.add('hidden');
-        document.getElementById('page2').classList.add('hidden');
-        document.getElementById('page' + page).classList.remove('hidden');
+    let page = 1;
+    function togglePage() {
+        if (page === 1) {
+            document.getElementById('title').innerText = "Halaman 2: Pendidikan & Keterampilan";
+            document.getElementById('image').src = "Universitas Tadulako.jpg";
+            document.getElementById('image').alt = "Pendidikan";
+            document.getElementById('info1').innerHTML = "<strong>Universitas:</strong> Tadulako";
+            document.getElementById('info2').innerHTML = "<strong>Fakultas:</strong> Teknik";
+            document.getElementById('info3').innerHTML = "<strong>Prodi:</strong> S1 Sistem Informasi";
+            document.getElementById('info4').style.display = "none";
+            document.getElementById('toggleButton').innerText = "Kembali ke Halaman 1";
+            page = 2;
+        } else {
+            document.getElementById('title').innerText = "Halaman 1: Informasi Pribadi";
+            document.getElementById('image').src = "profile.jpg";
+            document.getElementById('image').alt = "Foto Profil";
+            document.getElementById('info1').innerHTML = "<strong>Nama:</strong> Asma Lutfi";
+            document.getElementById('info2').innerHTML = "<strong>Alamat:</strong> Jl. Lengaru, Palu";
+            document.getElementById('info3').innerHTML = "<strong>Email:</strong> asmalutfi025@gmail.com";
+            document.getElementById('info4').style.display = "block";
+            document.getElementById('info4').innerHTML = "<strong>No. HP:</strong> 082187937743";
+            document.getElementById('toggleButton').innerText = "Lanjut ke Halaman 2";
+            page = 1;
+        }
     }
     </script>
 </body>
