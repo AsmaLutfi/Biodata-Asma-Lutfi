@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #1E90FF; color: white; }
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #ce1380; color: white; }
         .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: rgba(255, 255, 255, 0.9); color: black; }
         .hidden { display: none; }
         button { margin-top: 10px; padding: 10px; cursor: pointer; }
