@@ -15,7 +15,7 @@
 <body>
     <div class="container" id="page1">
         <h2>Halaman 1: Informasi Pribadi</h2>
-        <img src="Picture 1.jpeg" alt="Foto Profil">
+        <img src="Picture 1.jpeg" widht="300" height="200" alt="Foto Profil">
         <p><strong>Nama:</strong> Asma Lutfi</p>
         <p><strong>Alamat:</strong> Jl. Lengaru, Palu</p>
         <p><strong>Email:</strong> asmalutfi025@gmail.com</p>
