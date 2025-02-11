@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="color:#670940;">Biodata</title>
+    <title style="color:#bcbcbc;">Biodata</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; background-color: #e3148d; color: rgb(235, 120, 183); }
         .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #de7aaf; border-radius: 10px; background-color: rgba(255, 255, 255, 0.9); color: black; }
