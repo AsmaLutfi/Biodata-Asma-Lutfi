@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #b1118e; color: rgb(231, 148, 213); }
-        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e383d3; border-radius: 10px; background-color: rgba(255, 255, 255, 0.9); color: black; }
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #c35d10; color: rgb(215, 215, 215); }
+        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eeeeee; border-radius: 10px; background-color: rgba(255, 255, 255, 0.9); color: black; }
         .hidden { display: none; }
         button { margin-top: 10px; padding: 10px; cursor: pointer; }
         img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 15px; }
